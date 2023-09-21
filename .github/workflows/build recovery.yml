@@ -38,7 +38,7 @@ jobs:
       uses: rokibhasansagar/slimhub_actions@main
 
 
-    name: Set Swap Space
+    - name: Set Swap Space
       uses: pierotofy/set-swap-space@master
       with:
         swap-size-gb: 20
