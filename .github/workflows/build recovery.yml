@@ -22,6 +22,7 @@ jobs:
         echo "DEVICE_PATH=$(cat config.env | grep "DEVICE_PATH" | head -n 1 | cut -d "=" -f 2)" >> $GITHUB_ENV
         echo "MAKEFILE_NAME=$(cat config.env | grep "MAKEFILE_NAME" | head -n 1 | cut -d "=" -f 2)" >> $GITHUB_ENV
         echo "MAKEWHAT=$(cat config.env | grep "MAKEWHAT" | head -n 1 | cut -d "=" -f 2)" >> $GITHUB_ENV
+        echo "DEVICE_NAME=$(cat config.env | grep "DEVICE_NAME" | head -n 1 | cut -d "=" -f 2)" >> $GITHUB_ENV
       
 
     - name: Cleanup
